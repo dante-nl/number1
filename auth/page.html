@@ -45,8 +45,8 @@ def exchange_code(code):
   r = requests.post('%s/oauth2/token' % API_ENDPOINT, data=data, headers=headers)
   r.raise_for_status()
   return r.json()
-  alert( 'Hey {user}! You get redirected soon to add the bot!' );
-  </script>
-  <p>hi</p>
+  alert(f 'Hey {user}! You get redirected soon to add the bot!' );
+</script>
+<p>hi</p>
 </body>
 </html>
