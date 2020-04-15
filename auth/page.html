@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Number 1 the Discord bot</title>
+<title>Number 1</title>
 <style>
 
 body { 
@@ -24,29 +24,7 @@ color: #fff
 </style>
 </head>
 <body>
-<script>
-API_ENDPOINT = 'https://discordapp.com/api/v6'
-CLIENT_ID = '699892095980404746'
-CLIENT_SECRET = 'F8yxEXP3z4aGDZuRpoRSiwicZ45qZl5q'
-REDIRECT_URI = 'https://number-one.netlify.com/auth/page.html'
+<h3>Thanks for adding Number 1!<h3>
 
-def exchange_code(code):
-  data = {
-    'client_id': CLIENT_ID,
-    'client_secret': CLIENT_SECRET,
-    'grant_type': 'authorization_code',
-    'code': code,
-    'redirect_uri': REDIRECT_URI,
-    'scope': 'identify'
-  }
-  headers = {
-    'Content-Type': 'application/x-www-form-urlencoded'
-  }
-  r = requests.post('%s/oauth2/token' % API_ENDPOINT, data=data, headers=headers)
-  r.raise_for_status()
-  return r.json()
-  alert(f 'Hey {user}! You get redirected soon to add the bot!' );
-</script>
-  <p>Hi {user}!</p>
 </body>
 </html>
